@@ -1,1 +1,49 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #282A36;
+}
+
+main {
+  margin-top: 10%;
+  position: relative;
+}
+
+body {
+  color: white;
+}
+body img {
+  max-width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.menu {
+  background-color: #282A36;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 99;
+}
+.menu a {
+  color: #CD4718;
+}
+
+#identity {
+  width: 100%;
+  height: 100vh;
+  padding: 25% 10% 0 40%;
+}/*# sourceMappingURL=style.css.map */
