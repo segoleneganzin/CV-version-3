@@ -1,0 +1,54 @@
+#presentation {
+    margin-top: -5%;
+}
+#training {
+    width: 40%;
+    height: 150%;
+    margin: 5% auto 5% auto;
+    padding: 1% 5% 5% 5%;
+    border: 1px solid white;
+    text-align: center;
+    img {
+        width: 100%;
+        padding-top: 5%;
+        &:hover {
+            transform: scale(2);
+        }
+    }
+}
+#skills {
+    background-image: url(/img/rouages.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 25%;
+    background-position: 1%;
+    padding: 2% 0% 5% 0%;
+    color: black;
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 28%;
+    }
+    h1 {
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+}
+#project {
+    background-color: #787878;
+    padding: 4%;
+    h1 {
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    img {
+        max-width: 300px;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

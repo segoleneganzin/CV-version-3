@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #282A36;
+  background: #000000;
 }
 
 main {
@@ -13,21 +13,23 @@ main {
   position: relative;
 }
 
-body {
-  color: white;
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/font/Roboto_Mono/static/RobotoMono-Regular.ttf");
 }
-body img {
-  max-width: 250px;
+body {
+  font-family: "RobotoMono", sans-serif;
+  color: #D3D3D3;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #D3D3D3;
   font-weight: 600;
 }
 
 .menu {
-  background-color: #282A36;
+  background-color: black;
   height: 100px;
   width: 100%;
   display: flex;
@@ -36,14 +38,86 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 0%;
-  z-index: 99;
-}
-.menu a {
-  color: #CD4718;
+  z-index: 98;
 }
 
-#identity {
+.identity {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cbcbcb' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23f7f7f7' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%239b9b9b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23efefef' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23a2a2a2' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23fdfdfd' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23818181' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23d3d3d3' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23989898' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23c8c8c8' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23787878' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23ececec' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-size: cover;
   width: 100%;
   height: 100vh;
-  padding: 25% 10% 0 40%;
+  padding: 15% 10% 0 20%;
+}
+.identity-social-media {
+  transform: scale(0.5);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -1.5%;
+  top: -7%;
+  padding: 1%;
+  z-index: 99;
+  background-color: white;
+  border-radius: 25% 0 0 50%;
+}
+.identity-social-media a {
+  padding: 20% 0% 20% 0%;
+}
+
+#presentation {
+  margin-top: -5%;
+}
+
+#training {
+  width: 40%;
+  height: 150%;
+  margin: 5% auto 5% auto;
+  padding: 1% 5% 5% 5%;
+  border: 1px solid white;
+  text-align: center;
+}
+#training img {
+  width: 100%;
+  padding-top: 5%;
+}
+#training img:hover {
+  transform: scale(2);
+}
+
+#skills {
+  background-image: url(/img/rouages.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 25%;
+  background-position: 1%;
+  padding: 2% 0% 5% 0%;
+  color: black;
+}
+#skills .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 28%;
+}
+#skills h1 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#project {
+  background-color: #787878;
+  padding: 4%;
+}
+#project h1 {
+  text-align: center;
+  padding-bottom: 4%;
+}
+#project img {
+  max-width: 300px;
+}
+#project .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */

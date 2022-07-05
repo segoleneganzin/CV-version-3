@@ -1,11 +1,15 @@
+@font-face {
+    font-family: "RobotoMono";
+    src: url("/font/Roboto_Mono/static/RobotoMono-Regular.ttf");
+}
+
 body {
-    color: white;
-    img {
-        max-width: 250px;
-    }
+    font-family: "RobotoMono", sans-serif;
+    color: #D3D3D3;
+
 }
 a {
     text-decoration: none;
-    color: white;
+    color: #D3D3D3;
     font-weight: 600;
 }
