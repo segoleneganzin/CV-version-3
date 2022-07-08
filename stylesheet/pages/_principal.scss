@@ -11,6 +11,9 @@
     background: #363636;
     border-radius: 10px;
     text-align: center;
+    .separation {
+        border-radius: 10px;
+    }
     @media screen and (max-width:1440px) {
         height: 200%;
         width: 80%;
