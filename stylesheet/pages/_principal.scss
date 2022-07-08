@@ -83,26 +83,39 @@
             flex-direction: column;
         }
         .project-box {
-            padding: 2%;
-            background: #363636;
             border-radius: 10px;
             h2 {
-                margin: 3% 0 3% 0;
+                padding: 3% 2% 3% 2%;
+                margin: 1%;
                 text-align: center;
             }
             img {
+                width: 100%;
+                margin: 5px;
                 border-radius: 10px;
             }
             p {
+                margin: 1%;
                 font-style: italic;
                 font-size: 20px;
                 text-align: center;
+
             }
             @media screen and (max-width:768px) {
                 margin: 5% auto 5% auto;
-                width: 60%;                
+                padding: 3px;
+                width: 62%;                
                 img {
-                    width: 100%;
+                    width: 96%;
+                }
+                h2 {
+                    width: 96%;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                p {
+                    width: 96%;
+                    font-size: smaller;
                 }
             }
         }
@@ -132,10 +145,9 @@
 .contact {
     .container {
         width: 100%;
-        img{
-            position: absolute;
-            left: 49%;   
-            margin-bottom: 5%; 
+        img {
+            display: block;
+            margin: auto;
         }
     }
 }

@@ -11,4 +11,7 @@ body {
 main {
     margin: 10% 0 10% 0;
     position: relative;
+    @media screen and (max-width:650px) {
+      margin-bottom: 15%;
+  }
 }
