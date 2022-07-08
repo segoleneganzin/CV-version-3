@@ -26,8 +26,36 @@ a {
   text-decoration: none;
   color: #D3D3D3;
   font-weight: 600;
+  font-size: 25px;
 }
 
+h1 {
+  text-align: center;
+  padding: 2%;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: smaller;
+  }
+}
 .menu {
   background-color: black;
   height: 100px;
@@ -40,6 +68,14 @@ a {
   top: 0%;
   z-index: 98;
 }
+@media screen and (max-width: 1024px) {
+  .menu {
+    flex-direction: column;
+    height: 400px;
+    margin-top: 3%;
+    position: static;
+  }
+}
 
 .identity {
   background-color: #000000;
@@ -47,7 +83,11 @@ a {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  padding: 15% 10% 0 20%;
+  padding: 15% 0 0 20%;
+}
+.identity h1 {
+  text-align: left;
+  padding: 0% 0% 2% 0%;
 }
 .identity-social-media {
   transform: scale(0.5);
@@ -55,59 +95,113 @@ a {
   flex-direction: column;
   position: fixed;
   right: -1.5%;
-  top: -7%;
+  top: 100px;
   padding: 1%;
   z-index: 99;
-  background-color: white;
-  border-radius: 25% 0 0 50%;
+  background-color: transparent;
+  border-radius: 10px 0 0 10px;
 }
 .identity-social-media a {
   padding: 20% 0% 20% 0%;
 }
-
-#presentation {
-  margin-top: -5%;
+@media screen and (max-width: 768px) {
+  .identity-social-media {
+    flex-direction: row;
+    top: -5%;
+    right: -11%;
+    height: 15%;
+  }
 }
 
+footer {
+  position: relative;
+  bottom: 0%;
+  margin: 10% 0 0 2%;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 25%;
+  }
+}
+
+#scroll_to_top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+/*********************presentation**********************/
+#presentation {
+  margin: -5% 0 0 3%;
+}
+
+/*********************formation et experiences**********************/
 #training {
-  width: 40%;
+  width: 60%;
   height: 150%;
   margin: 5% auto 5% auto;
   padding: 1% 5% 5% 5%;
-  border: 1px solid white;
+  background: #363636;
+  border-radius: 10px;
   text-align: center;
+}
+@media screen and (max-width: 1440px) {
+  #training {
+    height: 200%;
+    width: 80%;
+  }
 }
 #training img {
   width: 100%;
   padding-top: 5%;
 }
-#training img:hover {
-  transform: scale(2);
-}
 
+/*********************competences**********************/
 #skills {
   background-image: url(/img/rouages.png);
   background-repeat: no-repeat;
   background-color: white;
   background-size: 25%;
-  background-position: 1%;
-  padding: 2% 0% 5% 0%;
+  background-position: 12%;
+  padding: 0% 0% 5% 0%;
   color: black;
+  width: 100%;
+}
+@media screen and (max-width: 1440px) {
+  #skills {
+    background-size: 20%;
+    background-position: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  #skills {
+    background-image: none;
+  }
 }
 #skills .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-left: 28%;
+  margin-left: 45%;
+  width: 50%;
 }
-#skills h1 {
-  text-align: center;
-  padding-bottom: 2%;
+@media screen and (max-width: 425px) {
+  #skills .container {
+    width: 90%;
+  }
+  #skills .container p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #skills .container {
+    margin-left: 5%;
+  }
 }
 
+/*********************projets**********************/
 #project {
-  background-color: #787878;
-  padding: 4%;
+  padding: 0 4% 4% 4%;
 }
 #project h1 {
   text-align: center;
@@ -120,4 +214,67 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  #project .container {
+    flex-direction: column;
+  }
+}
+#project .container .project-box {
+  padding: 2%;
+  background: #363636;
+  border-radius: 10px;
+}
+#project .container .project-box h2 {
+  margin: 3% 0 3% 0;
+  text-align: center;
+}
+#project .container .project-box img {
+  border-radius: 10px;
+}
+#project .container .project-box p {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #project .container .project-box {
+    margin: 5% auto 5% auto;
+    width: 60%;
+  }
+  #project .container .project-box img {
+    width: 100%;
+  }
+}
+
+/*********************centres d'interet**********************/
+#hobbies {
+  background: #363636;
+  padding: 1% 5% 5% 5%;
+}
+#hobbies h1 {
+  margin-bottom: 5%;
+}
+#hobbies p {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  #hobbies p {
+    flex-direction: column;
+  }
+  #hobbies p img {
+    width: 50px;
+    margin: auto;
+  }
+}
+
+/*********************contact**********************/
+#contact .container {
+  width: 100%;
+}
+#contact .container img {
+  position: absolute;
+  left: 49%;
+  margin-bottom: 5%;
 }/*# sourceMappingURL=style.css.map */

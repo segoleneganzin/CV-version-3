@@ -1,44 +1,65 @@
+/*********************presentation**********************/
 #presentation {
-    margin-top: -5%;
+    margin: -5% 0 0 3%;
 }
+/*********************formation et experiences**********************/
 #training {
-    width: 40%;
+    width: 60%;
     height: 150%;
     margin: 5% auto 5% auto;
     padding: 1% 5% 5% 5%;
-    border: 1px solid white;
+    background: #363636;
+    border-radius: 10px;
     text-align: center;
+    @media screen and (max-width:1440px) {
+        height: 200%;
+        width: 80%;
+    }
     img {
         width: 100%;
         padding-top: 5%;
-        &:hover {
-            transform: scale(2);
-        }
     }
 }
+/*********************competences**********************/
 #skills {
     background-image: url(/img/rouages.png);
     background-repeat: no-repeat;
     background-color: white;
     background-size: 25%;
-    background-position: 1%;
-    padding: 2% 0% 5% 0%;
+    background-position: 12%;
+    padding: 0% 0% 5% 0%;
     color: black;
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 28%;
+    width: 100%;
+    @media screen and (max-width:1440px) {
+        background-size: 20%;
+        background-position: 90%;
     }
-    h1 {
-        text-align: center;
-        padding-bottom: 2%;
+    @media screen and (max-width:425px) {
+        background-image: none;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 45%;
+        width: 50%;
+        @media screen and (max-width:425px) {
+            width: 90%;
+            p {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:1440px) {
+            margin-left: 5%;
+        }
+    
+    }
 }
+/*********************projets**********************/
 #project {
-    background-color: #787878;
-    padding: 4%;
+    padding: 0 4% 4% 4%;
     h1 {
         text-align: center;
         padding-bottom: 4%;
@@ -50,5 +71,63 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+        .project-box {
+            padding: 2%;
+            background: #363636;
+            border-radius: 10px;
+            h2 {
+                margin: 3% 0 3% 0;
+                text-align: center;
+            }
+            img {
+                border-radius: 10px;
+            }
+            p {
+                font-style: italic;
+                font-size: 20px;
+                text-align: center;
+            }
+            @media screen and (max-width:768px) {
+                margin: 5% auto 5% auto;
+                width: 60%;                
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/*********************centres d'interet**********************/
+#hobbies {
+    background: #363636;
+    padding: 1% 5% 5% 5%;
+    h1 {
+        margin-bottom: 5%;
+    }
+    p {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            img {
+                width: 50px;
+                margin: auto;
+            }
+        }
+    
+    }
+}
+/*********************contact**********************/
+#contact {
+    .container {
+        width: 100%;
+        img{
+            position: absolute;
+            left: 49%;   
+            margin-bottom: 5%; 
+        }
     }
 }
