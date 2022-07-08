@@ -1,9 +1,9 @@
 /*********************presentation**********************/
-#presentation {
+.presentation {
     margin: -5% 0 0 3%;
 }
 /*********************formation et experiences**********************/
-#training {
+.training {
     width: 60%;
     height: 150%;
     margin: 5% auto 5% auto;
@@ -24,7 +24,7 @@
     }
 }
 /*********************competences**********************/
-#skills {
+.skills {
     background-image: url(/img/rouages.png);
     background-repeat: no-repeat;
     background-color: white;
@@ -61,7 +61,7 @@
     }
 }
 /*********************projets**********************/
-#project {
+.project {
     padding: 0 4% 4% 4%;
     h1 {
         text-align: center;
@@ -69,6 +69,11 @@
     }
     img {
         max-width: 300px;
+    }
+    .separation {
+        width: 40%;
+        margin: -2% 0 4% 30%;
+        border-radius: 10px;
     }
     .container {
         display: flex;
@@ -104,7 +109,7 @@
     }
 }
 /*********************centres d'interet**********************/
-#hobbies {
+.hobbies {
     background: #363636;
     padding: 1% 5% 5% 5%;
     h1 {
@@ -124,7 +129,7 @@
     }
 }
 /*********************contact**********************/
-#contact {
+.contact {
     .container {
         width: 100%;
         img{

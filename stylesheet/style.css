@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  margin-top: 10%;
+  margin: 10% 0 10% 0;
   position: relative;
 }
 
@@ -114,14 +114,10 @@ p {
 }
 
 footer {
-  position: relative;
-  bottom: 0%;
-  margin: 10% 0 0 2%;
-}
-@media screen and (max-width: 768px) {
-  footer {
-    margin-top: 25%;
-  }
+  height: 100px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 2%;
 }
 
 #scroll_to_top {
@@ -150,12 +146,12 @@ footer {
 }
 
 /*********************presentation**********************/
-#presentation {
+.presentation {
   margin: -5% 0 0 3%;
 }
 
 /*********************formation et experiences**********************/
-#training {
+.training {
   width: 60%;
   height: 150%;
   margin: 5% auto 5% auto;
@@ -164,22 +160,22 @@ footer {
   border-radius: 10px;
   text-align: center;
 }
-#training .separation {
+.training .separation {
   border-radius: 10px;
 }
 @media screen and (max-width: 1440px) {
-  #training {
+  .training {
     height: 200%;
     width: 80%;
   }
 }
-#training img {
+.training img {
   width: 100%;
   padding-top: 5%;
 }
 
 /*********************competences**********************/
-#skills {
+.skills {
   background-image: url(/img/rouages.png);
   background-repeat: no-repeat;
   background-color: white;
@@ -190,17 +186,17 @@ footer {
   width: 100%;
 }
 @media screen and (max-width: 1440px) {
-  #skills {
+  .skills {
     background-size: 20%;
     background-position: 90%;
   }
 }
 @media screen and (max-width: 425px) {
-  #skills {
+  .skills {
     background-image: none;
   }
 }
-#skills .container {
+.skills .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -208,94 +204,99 @@ footer {
   width: 50%;
 }
 @media screen and (max-width: 425px) {
-  #skills .container {
+  .skills .container {
     width: 90%;
   }
-  #skills .container p {
+  .skills .container p {
     width: 90%;
   }
 }
 @media screen and (max-width: 1440px) {
-  #skills .container {
+  .skills .container {
     margin-left: 5%;
   }
 }
 
 /*********************projets**********************/
-#project {
+.project {
   padding: 0 4% 4% 4%;
 }
-#project h1 {
+.project h1 {
   text-align: center;
   padding-bottom: 4%;
 }
-#project img {
+.project img {
   max-width: 300px;
 }
-#project .container {
+.project .separation {
+  width: 40%;
+  margin: -2% 0 4% 30%;
+  border-radius: 10px;
+}
+.project .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
-  #project .container {
+  .project .container {
     flex-direction: column;
   }
 }
-#project .container .project-box {
+.project .container .project-box {
   padding: 2%;
   background: #363636;
   border-radius: 10px;
 }
-#project .container .project-box h2 {
+.project .container .project-box h2 {
   margin: 3% 0 3% 0;
   text-align: center;
 }
-#project .container .project-box img {
+.project .container .project-box img {
   border-radius: 10px;
 }
-#project .container .project-box p {
+.project .container .project-box p {
   font-style: italic;
   font-size: 20px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  #project .container .project-box {
+  .project .container .project-box {
     margin: 5% auto 5% auto;
     width: 60%;
   }
-  #project .container .project-box img {
+  .project .container .project-box img {
     width: 100%;
   }
 }
 
 /*********************centres d'interet**********************/
-#hobbies {
+.hobbies {
   background: #363636;
   padding: 1% 5% 5% 5%;
 }
-#hobbies h1 {
+.hobbies h1 {
   margin-bottom: 5%;
 }
-#hobbies p {
+.hobbies p {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 1024px) {
-  #hobbies p {
+  .hobbies p {
     flex-direction: column;
   }
-  #hobbies p img {
+  .hobbies p img {
     width: 50px;
     margin: auto;
   }
 }
 
 /*********************contact**********************/
-#contact .container {
+.contact .container {
   width: 100%;
 }
-#contact .container img {
+.contact .container img {
   position: absolute;
   left: 49%;
   margin-bottom: 5%;
