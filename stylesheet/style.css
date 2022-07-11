@@ -55,7 +55,7 @@ p {
 .important-word {
   font-size: larger;
   font-weight: bold;
-  color: #F8AE48;
+  color: white;
 }
 
 .quote {
@@ -66,11 +66,9 @@ p {
   h1 {
     font-size: 40px;
   }
-
   h2 {
     font-size: 25px;
   }
-
   p {
     font-size: smaller;
   }
@@ -121,11 +119,10 @@ p {
 }
 .identity .typewriter-name {
   font-size: 150px;
-  color: #3b49b4;
   font-family: "Tangerine";
   width: 100%;
   overflow: hidden;
-  border-right: 0.05em solid white;
+  border-right: 0.02em solid white;
   white-space: nowrap;
   margin: 0 0 5% 0;
   letter-spacing: 0.15em;
@@ -236,6 +233,17 @@ footer {
   .under-menu {
     top: -0.1%;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.77, 0.17, 0.43, 0.97);
 }
 
 /*********************presentation**********************/
