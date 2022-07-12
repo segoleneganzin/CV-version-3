@@ -8,7 +8,8 @@
     height: 150%;
     margin: 5% auto 5% auto;
     padding: 1% 5% 5% 5%;
-    background: #363636;
+    background: white;
+    color: $grey;
     border-radius: 10px;
     text-align: center;
     .separation {
@@ -123,7 +124,7 @@
 }
 /*********************centres d'interet**********************/
 .hobbies {
-    background: #363636;
+    background: $grey;
     padding: 1% 5% 5% 5%;
     h1 {
         margin-bottom: 5%;
