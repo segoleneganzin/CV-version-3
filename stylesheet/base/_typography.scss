@@ -37,14 +37,28 @@ p {
 .quote {
     font-style: italic;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
+    a {
+        font-size: 30px;
+    }
     h1 {
         font-size: 40px;
     }
     h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:640px) {
+    h1 {
         font-size: 25px;
     }
     p {
-        font-size: smaller;
+        font-size: 15px;
+    }
+    a {
+        font-size: 20px;
     }
 }
