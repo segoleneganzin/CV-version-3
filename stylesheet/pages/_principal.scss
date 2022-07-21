@@ -4,7 +4,7 @@
 }
 /*********************formation et experiences**********************/
 .training {
-    width: 60%;
+    width: 80%;
     height: 150%;
     margin: 5% auto 5% auto;
     padding: 1% 5% 5% 5%;
@@ -17,7 +17,10 @@
     }
     @media screen and (max-width:1440px) {
         height: 200%;
-        width: 80%;
+        width: 100%;
+        border-radius: 0%;
+        background-color: black;
+        color: white;
     }
     img {
         width: 100%;
@@ -70,11 +73,6 @@
     }
     img {
         max-width: 300px;
-    }
-    .separation {
-        width: 40%;
-        margin: -2% 0 4% 30%;
-        border-radius: 10px;
     }
     .container {
         display: flex;
