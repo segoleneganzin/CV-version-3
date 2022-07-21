@@ -321,6 +321,10 @@ footer .social-media a {
 .training .separation {
   border-radius: 10px;
 }
+.training img {
+  width: 100%;
+  padding-top: 5%;
+}
 @media screen and (max-width: 1440px) {
   .training {
     height: 200%;
@@ -329,10 +333,9 @@ footer .social-media a {
     background-color: black;
     color: white;
   }
-}
-.training img {
-  width: 100%;
-  padding-top: 5%;
+  .training img {
+    border-radius: 10px;
+  }
 }
 
 /*********************competences**********************/
