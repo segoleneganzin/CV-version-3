@@ -38,6 +38,12 @@ a {
   font-size: 25px;
 }
 
+a:hover {
+  color: #023B6B;
+  font-weight: 600;
+  font-size: 25px;
+}
+
 h1 {
   text-align: center;
   padding: 2%;

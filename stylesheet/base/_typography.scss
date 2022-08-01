@@ -16,7 +16,11 @@ a {
     color: #D3D3D3;
     font-weight: 600;
     font-size: 25px;
-
+}
+a:hover {
+    color: $darkblue;
+    font-weight: 600;
+    font-size: 25px;
 }
 h1 {
     text-align: center;
