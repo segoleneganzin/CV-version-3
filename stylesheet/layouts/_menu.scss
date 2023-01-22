@@ -8,10 +8,10 @@
     position: sticky;
     top: 0%;
     z-index: 98;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1440px) {
         flex-direction: column;
         height: 400px;
-        margin-top: 3%;
+        margin: 3% 0 3% 0;
         position: static;
     }
 }

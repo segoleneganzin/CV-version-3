@@ -1,27 +1,37 @@
 /*********************presentation**********************/
-#presentation {
+.presentation {
     margin: -5% 0 0 3%;
 }
 /*********************formation et experiences**********************/
-#training {
-    width: 60%;
+.training {
+    width: 80%;
     height: 150%;
     margin: 5% auto 5% auto;
     padding: 1% 5% 5% 5%;
-    background: #363636;
+    background: white;
+    color: $grey;
     border-radius: 10px;
     text-align: center;
-    @media screen and (max-width:1440px) {
-        height: 200%;
-        width: 80%;
+    .separation {
+        border-radius: 10px;
     }
     img {
         width: 100%;
         padding-top: 5%;
     }
+    @media screen and (max-width:1440px) {
+        height: 200%;
+        width: 100%;
+        border-radius: 0%;
+        background-color: black;
+        color: white;
+        img {
+            border-radius: 10px;
+        }
+    }
 }
 /*********************competences**********************/
-#skills {
+.skills {
     background-image: url(/img/rouages.png);
     background-repeat: no-repeat;
     background-color: white;
@@ -58,7 +68,7 @@
     }
 }
 /*********************projets**********************/
-#project {
+.project {
     padding: 0 4% 4% 4%;
     h1 {
         text-align: center;
@@ -75,34 +85,47 @@
             flex-direction: column;
         }
         .project-box {
-            padding: 2%;
-            background: #363636;
             border-radius: 10px;
             h2 {
-                margin: 3% 0 3% 0;
+                padding: 3% 2% 3% 2%;
+                margin: 1%;
                 text-align: center;
             }
             img {
+                width: 100%;
+                margin: 5px;
                 border-radius: 10px;
             }
             p {
+                margin: 1%;
                 font-style: italic;
                 font-size: 20px;
                 text-align: center;
+
             }
             @media screen and (max-width:768px) {
                 margin: 5% auto 5% auto;
-                width: 60%;                
+                padding: 3px;
+                width: 62%;                
                 img {
-                    width: 100%;
+                    width: 96%;
+                }
+                h2 {
+                    width: 96%;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                p {
+                    width: 96%;
+                    font-size: smaller;
                 }
             }
         }
     }
 }
 /*********************centres d'interet**********************/
-#hobbies {
-    background: #363636;
+.hobbies {
+    background: $grey;
     padding: 1% 5% 5% 5%;
     h1 {
         margin-bottom: 5%;
@@ -121,13 +144,12 @@
     }
 }
 /*********************contact**********************/
-#contact {
+.contact {
     .container {
         width: 100%;
-        img{
-            position: absolute;
-            left: 49%;   
-            margin-bottom: 5%; 
+        img {
+            display: block;
+            margin: auto;
         }
     }
 }

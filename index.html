@@ -1,51 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
    <head>
         <title>Ségolène Ganzin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Script-->
-        <script type="text/javascript" src="script.js"> </script>
+        <script src="script.js" defer> </script>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--Mon CSS-->
-        <link type="text/css" rel="stylesheet" href="./stylesheet/style.css">
+        <link type="text/css" rel="stylesheet" href="./stylesheet/prefixed/style.css">
         <!--meta-->
-        <meta name="description" content="CV en ligne, recherche d'une alternance développeur web" />
+        <meta name="description" content="CV en ligne, étudiante en informatique" />
         
         <!-- Twitter Card data -->
-        <meta name="twitter:card" content="CV en ligne, recherche d'une alternance développeur web">
+        <meta name="twitter:card" content="CV en ligne, étudiante en informatique">
         
         <!-- Open Graph data Facebook -->
         <meta property="og:title" content="Ségolène Ganzin"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:description" content="CV en ligne, recherche d'une alternance développeur web"/>
+        <meta property="og:description" content="CV en ligne, étudiante en informatique"/>
 
         <!-- Open Graph data Linkedin -->
         <meta property='og:title' content="Ségolène Ganzin"/>
         <meta property='og:image' content="https://www.segoleneganzin.fr/img/projet_cv.png"/>
-        <meta property='og:description' content="CV en ligne, recherche d'une alternance développeur web"/>
-        <meta property=”og:url” content="https://www.segoleneganzin.fr" />
+        <meta property='og:description' content="CV en ligne, étudiante en informatique"/>
+        <meta property="og:url" content="https://www.segoleneganzin.fr" />
 
     </head>
     <body>
         <div id="top"></div>
-        <!-- Header Menu -->
+        <!-- Header -->
         <header class="site-header">
             <div class="identity">
-                    <div class="identity-name">
-                            <h1>Ségolène Ganzin</h1>
-                    </div>
-                    <div class="identity-resume">                       
-                        <h3><strong>Développeuse en formation</strong></h3>
-                    </div>
-                    <div class="identity-social-media">
-                        <a href="https://www.linkedin.com/in/segoleneganzin/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
-                        <a href="https://github.com/segoleneganzin" target="_blank"><img src="img/github.png" alt="GitHub"></a>
-                        <a href="https://app.assessfirst.com/_/profile/iixo7dtr-segolene-ganzin" target="_blank"><img src="img/app_assessFirst.png" alt="App AssessFirst"></a>
-                    </div>
+                <div class="identity-img">
+                    <img src="./img/DSC01566.jpg" alt="profil picture">
+                </div>
+                <div class="identity-name">
+                        <h1>Hi! I'm </h1>
+                        <div class="typewriter-name">Ségolène Ganzin.</div>
+                        <div class="identity-resume">                       
+                            <p>Développeuse informatique en formation</p>
+                        </div>
+                </div>                    
             </div>
         </header>
+        <!--separation-->
+        <div class="separation"></div>
+        <!--ancre pour menu-->
+        <div id="presentation"></div>
         <!--menu-->
         <nav class="menu">
             <!--Présentation-->
@@ -61,50 +64,59 @@
             <!--Contact-->
             <a class="item-menu" href="#contact">Contactez-moi</a>
         </nav>
+        <!--separation-->
+        <div class="separation under-menu"></div>
         <!--Contenu-->
         <main>
             <div class="contenu">
                 <!-- Section 1 Présentation -->
-                <div id="presentation">
+                <div class="presentation reveal">
                     <div class="container">
                         <p>J’ai grandi entouré d’ordinateurs et de périphériques en tout genre, au travers de l’entreprise familiale, et cela m’a toujours suivi et intéressé.<br> 
                             Après plusieurs années en cuisine je fais le choix de retourner à ma première passion, l’informatique. <br> <br> 
-                            J’ai toujours aimé essayer de <strong>comprendre</strong> le fonctionnement des ordinateurs, <strong>résoudre</strong> des problèmes, <strong>trouver</strong> des solutions,<br>  
-                            <strong>aider</strong> les autres à travers le service client, me sentir utile, <strong>m’amuser à coder</strong>, découvrir de nouvelles choses et <strong>apprendre</strong> en permanence.<br> 
+                            J’ai toujours aimé essayer de <span class="important-word">comprendre</span> le fonctionnement des ordinateurs, <span class="important-word">résoudre</span> des problèmes, <span class="important-word">trouver</span> des solutions,<br>  
+                            <span class="important-word">aider</span> les autres à travers le service client, me sentir utile, <span class="important-word">m’amuser à coder</span>, découvrir de nouvelles choses et <span class="important-word">apprendre</span> en permanence.<br> 
                             La conception, le développement web et la maintenance m'attirent particulièrement, tout comme le traitement des bases de données et la cybersécurité des services informatiques.<br> <br> 
-                                <span class="quote">
-                                    <svg xmlns="https://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-                                    </svg>                            
-                                    Je fais souvent un parallèle plutôt surprenant entre la cuisine et l’informatique, en effet, au départ on a plusieurs “ingrédients” comme les logiciels, les langages de programmation,
-                                    les bases de données, et “ustensiles” tels que les ordinateurs, les serveurs physiques, les imprimantes et les routeurs,
-                                    qui vont nous mener à la réalisation d’un “plat” afin de satisfaire un client, comme par exemple une connexion internet réussie, 
-                                    la création d'un site internet ou encore d'une application mobile et bien d'autres. 
-                                </span>
-                            <br>  
-                            J’ai acquis des compétences informatiques lors de mes études en économie et en statistiques et informatique décisionnel, <br>
-                            comme les <strong>bases du codage</strong> (Html5, CSS3, JavaScript) et la suite <strong>Microsoft Office</strong>. <br><br>
-                            Mon goût pour l'apprentissage m'a amené à suivre des cours sur <strong>Windows</strong>, la virtualisation des environnements de travail (hyperviseurs de type 2 principalement - <strong>VirtualBox</strong>), 
-                            la mise en place d'une <strong>veille technologique</strong>, la conception d'un <strong>réseau TCP/IP</strong>, la gestion d'un <strong>serveur Windows</strong> et je continu à enrichir mes compétences tout en suivant la formation de prep'apprentissage chez Openclassrooms.<br> <br>
-                            Je souhaite poursuivre ma formation dans le développement de sites internet et d'applications métiers.<br> <br>
-                            Mon parcours et mes expériences professionnelles m’ont permis d’acquérir des compétences techniques et humaines, comme la <strong>rigueur</strong>, l'<strong>autonomie</strong> et le <strong>travail en équipe</strong>. Cela m’a également permis de connaître le monde du travail.<br> <br>
-                            Ma <strong>volonté</strong> et ma <strong>détermination</strong> vont me permettre d’atteindre mes objectifs.
+                            J’ai acquis des compétences informatiques lors de mes études en économie et en statistiques et informatique décisionnel, comme les <span class="important-word">bases du codage</span> (Html5, CSS3, JavaScript) et la suite <span class="important-word">Microsoft Office</span>. <br><br>
+                            Mon goût pour l'apprentissage m'a amené à suivre des cours sur <span class="important-word">Windows</span>, la virtualisation des environnements de travail (hyperviseurs de type 2 principalement - <span class="important-word">VirtualBox</span>), 
+                            la mise en place d'une <span class="important-word">veille technologique</span>, la conception d'un <span class="important-word">réseau TCP/IP</span>, la gestion d'un <span class="important-word">serveur Windows</span> et je continu à enrichir mes compétences au quotidien.<br> <br>
+                            Afin de poursuivre mon apprentissage dans le développement j'ai intégré un <span class="important-word">BTS Services informatiques aux organisations</span>, option <span class="important-word">Solutions logicielles et applications métiers</span>. <br><br>
+                            Mon parcours et mes expériences professionnelles m’ont permis d’acquérir des compétences techniques et humaines, comme la <span class="important-word">rigueur</span>, l'<span class="important-word">autonomie</span> et le <span class="important-word">travail en équipe</span>. Cela m’a également permis de connaître le monde du travail.<br> <br>
                         </p>
                     </div>
+                    <!--ancre pour menu-->
+                    <div id="training"></div>
                 </div> 
                 <!-- Section 2 Formations -->
-                <div id="training">
+                <div class="training">
+                    <!--separation-->
+                    <div class="separation"></div>
                     <div class="container">
                         <h1>Parcours</h1>
                         <h2>Formations et expériences</h2>
-                        <img src="/img/training.png">
+                        <img src="/img/training2.png" alt="training logo">
                     </div>
-                </div> 
-
+                    <!--ancre pour menu-->
+                    <div id="skills"></div>
+                </div>
+                <!--separation-->
+                <div class="separation"></div>
                 <!-- Section 3 Compétences -->
-                <div id="skills">
+                <div class="skills">
                     <h1>Compétences</h1>
-                    <div class="container">
+                    <div class="container reveal">
+                        <p>
+                            <strong>Programmation</strong> <br>(<i style="font-size: smaller;">HTML, CSS, JavaScript, PHP, JAVA, Python</i>) <br>
+                            Gérer des <strong>serveur</strong> <br>(<i style="font-size: smaller;">VM, NAS, LINUX, Apache, Windows</i>)<br>
+                            Gérer des <strong>base de données</strong> <br>(<i style="font-size: smaller;">MySQL, SQL Server, UML</i>) <br>
+                            <strong>CyberSécurité</strong> <br>(<i style="font-size: smaller;">OWASP, Hacking, Secure Coding, RGPD</i>) <br>
+                            Utiliser un <strong>terminal de commande</strong> <br>(<i style="font-size: smaller;">PowerShell, Bash</i>) <br>
+                            <strong>Optimiser un réseau</strong> en ajoutant des services <br>(<i style="font-size: smaller;">DHCP, WDS, WSUS</i>) <br>
+                            Mettre en place un environnement de test avec <strong>VirtualBox</strong> <br>
+                            Travailler en <strong>collaboration</strong> <br>(<i style="font-size: smaller;">GitHub, NAS, Cloud</i>) <br>
+                            Réaliser une <strong>veille technologique</strong> <br>
+                            (<i style="font-size: smaller;">Flux RSS, Feedly, Medium</i>)<br>
+                        </p>
                         <p> 
                             <strong>Echanger</strong> des idées <br>
                             <strong>Transmettre</strong> des informations<br>
@@ -117,43 +129,39 @@
                             <strong>Etablir</strong> des objectifs<br>
                             <strong>Mener</strong> un projet à terme<br>
                         </p>
-                        <p>
-                            Bases de <strong>codage</strong> (Bash, HTML5, CSS3, JavaScript) <br>
-                            Utilisation de <strong>GitHub</strong><br>
-                            Réaliser une <strong>veille technologique</strong><br>
-                            Utiliser un <strong>terminal de commande</strong><br>
-                            Mettre en place un <strong>environnement de développement front-end</strong><br>
-                            Mettre en place un environnement de test avec <strong>VirtualBox</strong><br>
-                            Bonne maîtrise de <strong>Word et Excel</strong><br>
-                            Installer et paramétrer <strong>Windows 10</strong><br>
-                            Déployer Windows 10 avec <strong>Sysprep</strong><br>
-                            Gestion de <strong>Windows Server 2019</strong><br>
-                            <strong>Monter un ordinateur</strong> pour un client<br>
-                            <strong>Optimiser un réseau</strong> en ajoutant des services (DHCP, WDS, WSUS)
-                        </p>
                     </div>
+                    <!--ancre pour menu-->
+                    <div id="project"></div>
                 </div>
 
                 <!-- Section projet/portfolio-->
-                <div id="project">
+                <div class="project">
                     <h1>Projets</h1>
+                    <!--separation-->
+                    <div class="separation"></div>
                     <div class="container">
-                        <div class="project-box">                      
-                            <a href="https://www.segoleneganzin.fr/pony.html" target="_blank"><img src="/img/pony-painting.png" alt="Pony in the field"></a>
+                        <div class="project-box">
+                            <a href="./CV_en_ligne_2/pony.html" target="_blank"><img src="/img/pony-painting.png" alt="Pony in the field"></a>
                             <h2>Pony in the field</h2>
                             <p>Projet réalisé en CSS</p>
                         </div>
                         <div class="project-box">                      
-                            <a href="https://www.segoleneganzin.fr/sky-timelapse/sky-timelapse.html" target="_blank"><img src="/img/timelapse.png" alt="Sky timelapse"></a>
+                            <a href="./CV_en_ligne_2/sky-timelapse/sky-timelapse.html" target="_blank"><img src="/img/timelapse.png" alt="Sky timelapse"></a>
                             <h2>Sky timelapse</h2>
                             <p>Projet réalisé en Sass</p>
-
+                        </div>
+                        <div class="project-box">
+                            <a href="./CV_en_ligne_2/index.html" target="_blank"><img src="/img/site-cv_v1.png" alt="Pony in the field"></a>
+                            <h2>Site CV</h2>
+                            <p>Version 1</p>
                         </div>
                     </div>
+                    <!--ancre pour menu-->
+                    <div id="hobbies"></div>
                 </div>
 
                 <!-- Section 5 Centres d'intérêts -->
-                <div id="hobbies">
+                <div class="hobbies">
                     <div class="container">
                         <h1>Centres d'intérêts</h1>
                         <p>
@@ -168,7 +176,9 @@
                 </div>
 
                 <!-- Section 6 Contact -->
-                <div id="contact">
+                <div class="contact">
+                    <!--ancre pour menu-->
+                    <div id="contact"></div>
                     <div class="container">
                         <h1>Contactez-moi</h1>
                         <a href="https://www.linkedin.com/in/segoleneganzin/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
@@ -177,13 +187,27 @@
             </div>
         </main>
 
+        <!--separation-->
+        <div class="separation"></div>
         <footer>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/segoleneganzin/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+                <a href="https://github.com/segoleneganzin" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+                <a href="https://app.assessfirst.com/_/profile/iixo7dtr-segolene-ganzin" target="_blank"><img src="img/app_assessFirst.png" alt="App AssessFirst"></a>
+            </div>
             <p>From scratch by Ségolène GANZIN</p>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="CSS Valide !" />
+                </a>
+            </p>
         </footer>
         
         <!--Scroll up-->
         <div id="scroll_to_top">
-            <a href="#top"><svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
               </svg></a>
         </div>
